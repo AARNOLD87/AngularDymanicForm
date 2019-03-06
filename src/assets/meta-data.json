@@ -1,0 +1,272 @@
+{
+  "name": "DynamicForm",
+  "displayName": "DynamicForm",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "Required": {
+        "AllowEmptyStrings": { "type": "System.Boolean", "value": false },
+        "ErrorMessage": { "type": "System.String", "value": "Name is mandatory" },
+        "ErrorMessageResourceName": {
+          "type": "System.String",
+          "value": "ErrorMessageResourceName"
+        },
+        "ErrorMessageResourceType": {
+          "type": "System.Type",
+          "value": "ErrorMessageResourceType"
+        },
+        "RequiresValidationContext": {
+          "type": "System.Boolean",
+          "value": false
+        },
+        "uiControl": false,
+        "uiValidation": true,
+        "type": "Raptor.Core.DataAnnotations.Validation.RequiredAttribute"
+      },
+      "StringLength": {
+        "ErrorMessage": { "type": "System.String", "value": "Name length must be between 3 and 20 characters" },
+        "ErrorMessageResourceName": {
+          "type": "System.String",
+          "value": "ErrorMessageResourceName"
+        },
+        "ErrorMessageResourceType": {
+          "type": "System.Type",
+          "value": "ErrorMessageResourceType"
+        },
+        "MaximumLength": { "type": "System.Int32", "value": 20 },
+        "MinimumLength": { "type": "System.Int32", "value": 3 },
+        "RequiresValidationContext": {
+          "type": "System.Boolean",
+          "value": false
+        },
+        "uiControl": false,
+        "uiValidation": true,
+        "type": "Raptor.Core.DataAnnotations.Validation.StringLengthAttribute"
+      },
+      "TextBox": {
+        "ColLg": { "type": "System.Int32", "value": 6 },
+        "ColMd": { "type": "System.Int32", "value": 6 },
+        "ColSm": { "type": "System.Int32", "value": 6 },
+        "ColXs": { "type": "System.Int32", "value": 6 },
+        "EnabledWhenPropertyName": {
+          "type": "System.String",
+          "value": "EnabledWhenPropertyName"
+        },
+        "EnabledWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "EnabledWhenPropertyValue"
+        },
+        "HiddenWhenCreate": { "type": "System.Boolean", "value": false },
+        "HiddenWhenDelete": { "type": "System.Boolean", "value": false },
+        "HiddenWhenEdit": { "type": "System.Boolean", "value": false },
+        "Order": { "type": "System.Int32", "value": 0 },
+        "ReadOnly": { "type": "System.Boolean", "value": false },
+        "VisibleWhenPropertyName": {
+          "type": "System.String",
+          "value": "VisibleWhenPropertyName"
+        },
+        "VisibleWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "VisibleWhenPropertyValue"
+        },
+        "uiControl": true,
+        "uiValidation": false,
+        "type": "Raptor.Core.DataAnnotations.Form.TextBoxAttribute"
+      },
+      "uiControlType": "textbox",
+      "type": "System.String",
+      "order": 0,
+      "displayName": "Name",
+      "placeholder": "NamePlaceHolder"
+    },
+    "Surname": {
+      "Required": {
+        "AllowEmptyStrings": { "type": "System.Boolean", "value": false },
+        "ErrorMessage": { "type": "System.String", "value": "Surname is mandatory" },
+        "ErrorMessageResourceName": {
+          "type": "System.String",
+          "value": "ErrorMessageResourceName"
+        },
+        "ErrorMessageResourceType": {
+          "type": "System.Type",
+          "value": "ErrorMessageResourceType"
+        },
+        "RequiresValidationContext": {
+          "type": "System.Boolean",
+          "value": false
+        },
+        "uiControl": false,
+        "uiValidation": true,
+        "type": "Raptor.Core.DataAnnotations.Validation.RequiredAttribute"
+      },
+      "StringLength": {
+        "ErrorMessage": { "type": "System.String", "value": "Surname length must be between 3 and 50 characters" },
+        "ErrorMessageResourceName": {
+          "type": "System.String",
+          "value": "ErrorMessageResourceName"
+        },
+        "ErrorMessageResourceType": {
+          "type": "System.Type",
+          "value": "ErrorMessageResourceType"
+        },
+        "MaximumLength": { "type": "System.Int32", "value": 50 },
+        "MinimumLength": { "type": "System.Int32", "value": 3 },
+        "RequiresValidationContext": {
+          "type": "System.Boolean",
+          "value": false
+        },
+        "uiControl": false,
+        "uiValidation": true,
+        "type": "Raptor.Core.DataAnnotations.Validation.StringLengthAttribute"
+      },
+      "TextBox": {
+        "ColLg": { "type": "System.Int32", "value": 6 },
+        "ColMd": { "type": "System.Int32", "value": 6 },
+        "ColSm": { "type": "System.Int32", "value": 6 },
+        "ColXs": { "type": "System.Int32", "value": 6 },
+        "EnabledWhenPropertyName": {
+          "type": "System.String",
+          "value": "EnabledWhenPropertyName"
+        },
+        "EnabledWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "EnabledWhenPropertyValue"
+        },
+        "HiddenWhenCreate": { "type": "System.Boolean", "value": false },
+        "HiddenWhenDelete": { "type": "System.Boolean", "value": false },
+        "HiddenWhenEdit": { "type": "System.Boolean", "value": false },
+        "Order": { "type": "System.Int32", "value": 0 },
+        "ReadOnly": { "type": "System.Boolean", "value": false },
+        "VisibleWhenPropertyName": {
+          "type": "System.String",
+          "value": "VisibleWhenPropertyName"
+        },
+        "VisibleWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "VisibleWhenPropertyValue"
+        },
+        "uiControl": true,
+        "uiValidation": false,
+        "type": "Raptor.Core.DataAnnotations.Form.TextBoxAttribute"
+      },
+      "uiControlType": "textbox",
+      "type": "System.String",
+      "order": 0,
+      "displayName": "Surname",
+      "placeholder": "SurnamePlaceHolder"
+    },
+    "BirthDate": {
+      "Date": {
+        "ColLg": { "type": "System.Int32", "value": 6 },
+        "ColMd": { "type": "System.Int32", "value": 6 },
+        "ColSm": { "type": "System.Int32", "value": 6 },
+        "ColXs": { "type": "System.Int32", "value": 6 },
+        "EnabledWhenPropertyName": {
+          "type": "System.String",
+          "value": "EnabledWhenPropertyName"
+        },
+        "EnabledWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "EnabledWhenPropertyValue"
+        },
+        "Format": { "type": "System.String", "value": "dd/MM/yyyy" },
+        "HiddenWhenCreate": { "type": "System.Boolean", "value": false },
+        "HiddenWhenDelete": { "type": "System.Boolean", "value": false },
+        "HiddenWhenEdit": { "type": "System.Boolean", "value": false },
+        "Order": { "type": "System.Int32", "value": 0 },
+        "ReadOnly": { "type": "System.Boolean", "value": false },
+        "VisibleWhenPropertyName": {
+          "type": "System.String",
+          "value": "VisibleWhenPropertyName"
+        },
+        "VisibleWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "VisibleWhenPropertyValue"
+        },
+        "uiControl": true,
+        "uiValidation": false,
+        "type": "Raptor.Core.DataAnnotations.Form.DateAttribute"
+      },
+      "Required": {
+        "AllowEmptyStrings": { "type": "System.Boolean", "value": false },
+        "ErrorMessage": { "type": "System.String", "value": "BirthDate is mandatory" },
+        "ErrorMessageResourceName": {
+          "type": "System.String",
+          "value": "ErrorMessageResourceName"
+        },
+        "ErrorMessageResourceType": {
+          "type": "System.Type",
+          "value": "ErrorMessageResourceType"
+        },
+        "RequiresValidationContext": {
+          "type": "System.Boolean",
+          "value": false
+        },
+        "uiControl": false,
+        "uiValidation": true,
+        "type": "Raptor.Core.DataAnnotations.Validation.RequiredAttribute"
+      },
+      "uiControlType": "date",
+      "type": "System.Nullable`1[System.DateTime]",
+      "order": 2,
+      "displayName": "BirthDate",
+      "placeholder": "BirthDatePlaceHolder"
+    },
+    "TermsOfService": {
+      "CheckBox": {
+        "ColLg": { "type": "System.Int32", "value": 6 },
+        "ColMd": { "type": "System.Int32", "value": 6 },
+        "ColSm": { "type": "System.Int32", "value": 6 },
+        "ColXs": { "type": "System.Int32", "value": 6 },
+        "EnabledWhenPropertyName": {
+          "type": "System.String",
+          "value": "EnabledWhenPropertyName"
+        },
+        "EnabledWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "EnabledWhenPropertyValue"
+        },
+        "HiddenWhenCreate": { "type": "System.Boolean", "value": false },
+        "HiddenWhenDelete": { "type": "System.Boolean", "value": false },
+        "HiddenWhenEdit": { "type": "System.Boolean", "value": false },
+        "Order": { "type": "System.Int32", "value": 0 },
+        "ReadOnly": { "type": "System.Boolean", "value": false },
+        "VisibleWhenPropertyName": {
+          "type": "System.String",
+          "value": "VisibleWhenPropertyName"
+        },
+        "VisibleWhenPropertyValue": {
+          "type": "System.Object",
+          "value": "VisibleWhenPropertyValue"
+        },
+        "uiControl": true,
+        "uiValidation": false,
+        "type": "Raptor.Core.DataAnnotations.Form.CheckBoxAttribute"
+      },
+      "Required": {
+        "AllowEmptyStrings": { "type": "System.Boolean", "value": false },
+        "ErrorMessage": { "type": "System.String", "value": "It is necessary to agree" },
+        "ErrorMessageResourceName": {
+          "type": "System.String",
+          "value": "ErrorMessageResourceName"
+        },
+        "ErrorMessageResourceType": {
+          "type": "System.Type",
+          "value": "ErrorMessageResourceType"
+        },
+        "RequiresValidationContext": {
+          "type": "System.Boolean",
+          "value": false
+        },
+        "uiControl": false,
+        "uiValidation": true,
+        "type": "Raptor.Core.DataAnnotations.Validation.RequiredAttribute"
+      },
+      "uiControlType": "checkbox",
+      "type": "System.Boolean",
+      "order": 5,
+      "displayName": "I agree to the terms of service",
+      "placeholder": ""
+    }
+  }
+}

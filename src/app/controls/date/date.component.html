@@ -1,0 +1,11 @@
+<div class="form-group mb-1" [formGroup]="detailsForm">
+  <label >{{controlLabel}}</label>
+  <div class="input-group">
+    <input [formControlName]="controlKey" class="form-control" ngbDatepicker #d="ngbDatepicker">
+    <div class="input-group-append">
+      <button class="input-group-append btn btn-outline-secondary" (click)="d.toggle()" type="button">
+        <i class="fa fa-calendar"></i>
+      </button>
+    </div>
+  </div>
+</div>

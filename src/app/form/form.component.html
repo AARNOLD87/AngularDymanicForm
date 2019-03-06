@@ -1,0 +1,14 @@
+<div *ngIf="detail">
+  <h3>{{detail.viewModelDisplayName}}</h3>
+  <form [formGroup]="detailsForm" class="form-horizontal" novalidate>
+    <div class="row">
+      <app-control-container [detailsForm]="detailsForm" *ngFor="let property of detail.propertiesDescriptors" [viewModelProperty]="property">
+      </app-control-container>
+    </div>
+    <div class="row mt-5">
+        <button type="button" scrollToInvalidField (click)="submit()" class="btn btn-primary col-12">
+          OK
+        </button>
+    </div>
+  </form>
+</div>

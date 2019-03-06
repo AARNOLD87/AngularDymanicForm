@@ -1,0 +1,4 @@
+<div  class="form-group mb-1" [ngClass]="{'has-danger': !isValid}" [formGroup]="detailsForm">
+    <label>{{controlLabel}}</label>
+    <input type="text" [formControlName]="controlKey" class="form-control">
+</div>

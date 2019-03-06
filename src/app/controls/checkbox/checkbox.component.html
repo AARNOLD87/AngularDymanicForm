@@ -1,0 +1,6 @@
+<div class="form-check mt-2 mt-sm-2 mb-2 mr-sm-2 mb-sm-0"
+  [ngClass]="{'has-danger': !isValid}" [formGroup]="detailsForm">
+  <label class="form-check-label">
+    <input [formControlName]="controlKey" type="checkbox" class="form-check-input"> {{controlLabel}}
+  </label>
+</div>
